@@ -19,7 +19,7 @@ CREATE TABLE patients (
   id INT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
   birthdate DATE NOT NULL,
-  gender ENUM('M', 'F') NOT NULL, /*or use binary (like 0-1) idk*/
+  gender VARCHAR(20) NOT NULL, /*ENUM('M', 'F')*/
   address VARCHAR(100) NOT NULL,
   phone VARCHAR(20) NOT NULL
 );
